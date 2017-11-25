@@ -2,7 +2,7 @@
 <div ng-hide="Abastecimento.inserting || Abastecimento.editing" data-component="crn-datasource-filter" id="crn-datasource-filter-general">
   <div class="form-group">
     <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
-    <input cronapp-filter="carro.placa;posto.nome" crn-datasource="Abastecimento" class="form-control" value="" placeholder="{search}" type="text" ___placeholder="{{'template.crud.search' | translate}}">
+    <input cronapp-filter="carro.placa;posto.nome" crn-datasource="Abastecimento" class="form-control" value="" placeholder="{search}" type="text" ______placeholder="{{'template.crud.search' | translate}}">
   </div>
 </div>
 <br>
@@ -105,7 +105,7 @@
           <div class="form-group">
             <label for="textinput-data" class="">Data</label>
             <div style="position:relative">
-              <input as-date="" format="DD/MM/YYYY" ng-model="Abastecimento.active.data" class="form-control" id="textinput-data" placeholder="Data" type="text">
+              <input as-date="" format="DD/MM/YYYY" ng-model="Abastecimento.active.data" class="form-control" id="textinput-data" placeholder="Data" type="text" required="required">
             </div>
           </div>
         </div>
@@ -113,28 +113,28 @@
         <div data-component="crn-textinput" id="crn-textinput-km">
           <div class="form-group">
             <label for="textinput-km" class="">Km</label>
-            <input step="0.01" ng-model="Abastecimento.active.km" class="form-control" id="textinput-km" placeholder="Km" type="number">
+            <input step="0.01" ng-model="Abastecimento.active.km" class="form-control" id="textinput-km" placeholder="Km" type="number" required="required">
           </div>
         </div>
         
         <div data-component="crn-textinput" id="crn-textinput-valor">
           <div class="form-group">
             <label for="textinput-valor" class="">Valor</label>
-            <input step="0.01" ng-model="Abastecimento.active.valor" class="form-control" id="textinput-valor" placeholder="Valor" type="number">
+            <input step="0.01" ng-model="Abastecimento.active.valor" class="form-control" id="textinput-valor" placeholder="Valor" type="number" required="required">
           </div>
         </div>
         
         <div data-component="crn-textinput" id="crn-textinput-precoLitro">
           <div class="form-group">
             <label for="textinput-precoLitro" class="">Preco Litro</label>
-            <input step="0.01" ng-model="Abastecimento.active.precoLitro" class="form-control" id="textinput-precoLitro" placeholder="Preco Litro" type="number">
+            <input step="0.01" ng-model="Abastecimento.active.precoLitro" class="form-control" id="textinput-precoLitro" placeholder="Preco Litro" type="number" required="required">
           </div>
         </div>
         <div data-component="crn-datasource" class="component-holder">
           <datasource name="Carro" entity="api/cronapi/crud/app.entity.Carro" keys="id" class="" dependent-by="{{Abastecimento}}"></datasource>
         </div>
         
-        <div data-component="crn-combobox-dynamic" id="crn-combobox-dynamic-carro">
+        <div data-component="crn-combobox-dynamic" id="crn-combobox-dynamic-carro" required="required">
           <div class="form-group">
             <label for="combobox-dynamic-carro" class="">Carro</label>
             <ui-select ng-model="Abastecimento.active.carro" crn-datasource="Carro" class="crn-select" id="combobox-dynamic-carro" theme="bootstrap">
@@ -153,7 +153,7 @@
           <datasource name="Posto" entity="api/cronapi/crud/app.entity.Posto" keys="id" class="" dependent-by="{{Abastecimento}}"></datasource>
         </div>
         
-        <div data-component="crn-combobox-dynamic" id="crn-combobox-dynamic-posto">
+        <div data-component="crn-combobox-dynamic" id="crn-combobox-dynamic-posto" required="required">
           <div class="form-group">
             <label for="combobox-dynamic-posto" class="">Posto</label>
             <ui-select ng-model="Abastecimento.active.posto" crn-datasource="Posto" class="crn-select" id="combobox-dynamic-posto" theme="bootstrap">

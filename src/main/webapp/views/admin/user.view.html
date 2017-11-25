@@ -5,7 +5,7 @@
     <input type="text" cronapp-filter="email;" crn-datasource="User" class="form-control" value="" placeholder="{{'template.crud.search' | translate}}">
   </div>
 </div>
-<br/>
+<br>
 <div data-component="crn-datasource" id="crn-datasource-763276" class="component-holder">
   <datasource filter="" name="User" entity="api/cronapi/crud/app.entity.User" keys="id" rows-per-page="100" delete-message="Deseja remover?" class=""></datasource>
 </div>
@@ -54,7 +54,7 @@
           <td class="">
             <div class="">
               <a ng-if="rowData.picture" ng-click="datasource.openImage(rowData.picture)">
-              <img data-ng-src="{{rowData.picture.startsWith('http') || (rowData.picture.startsWith('/') && rowData.picture.length < 1000)? rowData.picture : 'data:image/png;base64,' + rowData.picture}}" style="max-height: 30px;">
+              <img data-ng-src="{{rowData.picture.startsWith('http') || (rowData.picture.startsWith('/') &amp;&amp; rowData.picture.length < 1000)? rowData.picture : 'data:image/png;base64,' + rowData.picture}}" style="max-height: 30px;">
               </a>
             </div>
           </td>
@@ -86,45 +86,27 @@
         <button class="btn btn-success" ng-click="datasource.post()"><i class="glyphicon glyphicon-ok"></i></button>
         <button class="btn btn-danger" ng-click="datasource.cancel()"><i class="glyphicon glyphicon-remove"></i></button>
       </div>
-      <br/>
+      <br>
       <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
         
         <div data-component="crn-textinput" id="crn-textinput-email">
           <div class="form-group">
             <label for="textinput-email" class="">Email</label>
-            <input
-              type="text"
-              ng-model="User.active.email"
-              class="form-control"
-              id="textinput-email"
-              placeholder="Email"
-              >
+            <input type="email" ng-model="User.active.email" class="form-control" id="textinput-email" placeholder="Email">
           </div>
         </div>
         
         <div data-component="crn-textinput" id="crn-textinput-name">
           <div class="form-group">
             <label for="textinput-name" class="">Nome</label>
-            <input
-              type="text"
-              ng-model="User.active.name"
-              class="form-control"
-              id="textinput-name"
-              placeholder="Nome"
-              required="required">
+            <input type="text" ng-model="User.active.name" class="form-control" id="textinput-name" placeholder="Nome" required="required">
           </div>
         </div>
         
         <div data-component="crn-textinput" id="crn-textinput-login">
           <div class="form-group">
             <label for="textinput-login" class="">Login</label>
-            <input
-              type="text"
-              ng-model="User.active.login"
-              class="form-control"
-              id="textinput-login"
-              placeholder="Login"
-              required="required">
+            <input type="text" ng-model="User.active.login" class="form-control" id="textinput-login" placeholder="Login" required="required">
           </div>
         </div>
         
@@ -140,26 +122,14 @@
         <div data-component="crn-textinput" id="crn-textinput-password">
           <div class="form-group">
             <label for="textinput-password" class="">Senha</label>
-            <input
-              type="password"
-              ng-model="User.active.password"
-              class="form-control"
-              id="textinput-password"
-              placeholder="Senha"
-              required="required">
+            <input type="password" ng-model="User.active.password" class="form-control" id="textinput-password" placeholder="Senha" required="required">
           </div>
         </div>
         
         <div data-component="crn-textinput" id="crn-textinput-theme">
           <div class="form-group">
             <label for="textinput-theme" class="">Tema</label>
-            <input
-              type="text"
-              ng-model="User.active.theme"
-              class="form-control"
-              id="textinput-theme"
-              placeholder="Tema"
-              >
+            <input type="text" ng-model="User.active.theme" class="form-control" id="textinput-theme" placeholder="Tema">
           </div>
         </div>
         <!-- NtoN  -->
@@ -206,7 +176,7 @@
                       </td>
                       <td>
                         <div>
-                          <button class="btn btn-default btn-sm" ng-click="datasource.startEditing(rowData)" onclick="$('#modalRoleGrid').modal('show');" ><i class="fa fa-edit"></i></button>
+                          <button class="btn btn-default btn-sm" ng-click="datasource.startEditing(rowData)" onclick="$('#modalRoleGrid').modal('show');"><i class="fa fa-edit"></i></button>
                           <button class="btn btn-default btn-sm" ng-click="datasource.remove(rowData)"><i class="fa fa-times"></i></button>
                         </div>
                       </td>
@@ -214,7 +184,7 @@
                   </tbody>
                 </table>
                 <div class="table-footer-controls">
-                  <button class="btn btn-default btn-block btn-clicked" ng-show="datasource.hasNextPage()" ng-click="datasource.nextPage()" content="{{&quot;template.crud.load_more&quot; | translate}}...">{{"template.crud.load_more" | translate}}...</button>
+                  <button class="btn btn-default btn-block btn-clicked" ng-show="datasource.hasNextPage()" ng-click="datasource.nextPage()">{{"template.crud.load_more" | translate}}...</button>
                 </div>
               </div>
             </div>
@@ -240,11 +210,10 @@
         </div>
         <div class="list-group list-group-sm">
           
-          <div data-component="crn-textinput"  id="crn-textinput-id">
+          <div data-component="crn-textinput" id="crn-textinput-id">
             <div class="form-group">
               <label for="textinput-id">Id</label>
-              <input type="text"
-               ng-model="RoleGrid.active.id" class="form-control" id="textinput-id" placeholder="Id"  required="required">
+              <input type="text" ng-model="RoleGrid.active.id" class="form-control" id="textinput-id" placeholder="Id" required="required">
             </div>
           </div>
         </div>

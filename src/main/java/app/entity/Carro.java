@@ -36,28 +36,28 @@ public class Carro implements Serializable {
   /**
   * @generated
   */
-  @Column(name = "placa", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "placa", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String placa;
 
   /**
   * @generated
   */
-  @Column(name = "marca", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "marca", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String marca;
 
   /**
   * @generated
   */
-  @Column(name = "modelo", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "modelo", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String modelo;
 
   /**
   * @generated
   */
-  @Column(name = "ano", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "ano", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.Integer ano;
 
@@ -65,7 +65,7 @@ public class Carro implements Serializable {
   * @generated
   */
   @ManyToOne
-  @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+  @JoinColumn(name="fk_user", nullable = false, referencedColumnName = "id", insertable=true, updatable=true)
   
   private User user;
 

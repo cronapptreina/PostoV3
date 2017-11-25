@@ -37,28 +37,28 @@ public class Abastecimento implements Serializable {
   * @generated
   */
   @Temporal(TemporalType.DATE)
-  @Column(name = "data", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "data", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.util.Date data = new Date();
 
   /**
   * @generated
   */
-  @Column(name = "km", nullable = true, unique = false, precision=6, scale=2, insertable=true, updatable=true)
+  @Column(name = "km", nullable = false, unique = false, precision=6, scale=2, insertable=true, updatable=true)
   
   private java.lang.Double km;
 
   /**
   * @generated
   */
-  @Column(name = "valor", nullable = true, unique = false, precision=6, scale=2, insertable=true, updatable=true)
+  @Column(name = "valor", nullable = false, unique = false, precision=6, scale=2, insertable=true, updatable=true)
   
   private java.lang.Double valor;
 
   /**
   * @generated
   */
-  @Column(name = "precoLitro", nullable = true, unique = false, precision=4, scale=2, insertable=true, updatable=true)
+  @Column(name = "precoLitro", nullable = false, unique = false, precision=4, scale=2, insertable=true, updatable=true)
   
   private java.lang.Double precoLitro;
 
@@ -66,7 +66,7 @@ public class Abastecimento implements Serializable {
   * @generated
   */
   @ManyToOne
-  @JoinColumn(name="fk_carro", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+  @JoinColumn(name="fk_carro", nullable = false, referencedColumnName = "id", insertable=true, updatable=true)
   
   private Carro carro;
 
@@ -74,7 +74,7 @@ public class Abastecimento implements Serializable {
   * @generated
   */
   @ManyToOne
-  @JoinColumn(name="fk_posto", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
+  @JoinColumn(name="fk_posto", nullable = false, referencedColumnName = "id", insertable=true, updatable=true)
   
   private Posto posto;
 

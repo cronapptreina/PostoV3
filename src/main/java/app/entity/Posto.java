@@ -36,49 +36,49 @@ public class Posto implements Serializable {
   /**
   * @generated
   */
-  @Column(name = "nome", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "nome", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String nome;
 
   /**
   * @generated
   */
-  @Column(name = "cep", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "cep", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String cep;
 
   /**
   * @generated
   */
-  @Column(name = "logradouro", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "logradouro", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String logradouro;
 
   /**
   * @generated
   */
-  @Column(name = "numero", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "numero", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.Integer numero;
 
   /**
   * @generated
   */
-  @Column(name = "bairroi", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "bairroi", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String bairro;
 
   /**
   * @generated
   */
-  @Column(name = "cidade", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "cidade", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String cidade;
 
   /**
   * @generated
   */
-  @Column(name = "UF", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "UF", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String uf;
 

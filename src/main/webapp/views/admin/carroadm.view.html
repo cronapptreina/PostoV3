@@ -2,7 +2,7 @@
 <div ng-hide="Carro.inserting || Carro.editing" data-component="crn-datasource-filter" id="crn-datasource-filter-general">
   <div class="form-group">
     <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
-    <input cronapp-filter="placa;marca;modelo;user.email" crn-datasource="Carro" class="form-control" value="" placeholder="{search}" type="text" ___placeholder="{{'template.crud.search' | translate}}">
+    <input cronapp-filter="placa;marca;modelo;user.email" crn-datasource="Carro" class="form-control" value="" placeholder="{search}" type="text" ______placeholder="{{'template.crud.search' | translate}}">
   </div>
 </div>
 <br>
@@ -98,35 +98,35 @@
         <div data-component="crn-textinput" id="crn-textinput-placa">
           <div class="form-group">
             <label for="textinput-placa" class="">Placa</label>
-            <input ng-model="Carro.active.placa" class="form-control" id="textinput-placa" placeholder="Placa" mask="AAA-9999" type="text">
+            <input ng-model="Carro.active.placa" class="form-control" id="textinput-placa" placeholder="Placa" mask="AAA-9999" type="text" ng-required="required">
           </div>
         </div>
         
         <div data-component="crn-textinput" id="crn-textinput-marca">
           <div class="form-group">
             <label for="textinput-marca" class="">Marca</label>
-            <input ng-model="Carro.active.marca" class="form-control" id="textinput-marca" placeholder="Marca" type="text">
+            <input ng-model="Carro.active.marca" class="form-control" id="textinput-marca" placeholder="Marca" type="text" required="required">
           </div>
         </div>
         
         <div data-component="crn-textinput" id="crn-textinput-modelo">
           <div class="form-group">
             <label for="textinput-modelo" class="">Modelo</label>
-            <input ng-model="Carro.active.modelo" class="form-control" id="textinput-modelo" placeholder="Modelo" type="text">
+            <input ng-model="Carro.active.modelo" class="form-control" id="textinput-modelo" placeholder="Modelo" type="text" required="required">
           </div>
         </div>
         
         <div data-component="crn-textinput" id="crn-textinput-ano">
           <div class="form-group">
             <label for="textinput-ano" class="">Ano</label>
-            <input ng-model="Carro.active.ano" class="form-control" id="textinput-ano" placeholder="Ano" type="number">
+            <input ng-model="Carro.active.ano" class="form-control" id="textinput-ano" placeholder="Ano" type="number" required="required">
           </div>
         </div>
         <div data-component="crn-datasource" class="component-holder">
           <datasource name="User" entity="api/cronapi/crud/app.entity.User" keys="id" class="" dependent-by="{{Carro}}"></datasource>
         </div>
         
-        <div data-component="crn-combobox-dynamic" id="crn-combobox-dynamic-user">
+        <div data-component="crn-combobox-dynamic" id="crn-combobox-dynamic-user" required="required">
           <div class="form-group">
             <label for="combobox-dynamic-user" class="">User</label>
             <ui-select ng-model="Carro.active.user" crn-datasource="User" class="crn-select" id="combobox-dynamic-user" theme="bootstrap">

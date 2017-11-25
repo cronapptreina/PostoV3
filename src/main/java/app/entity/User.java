@@ -45,7 +45,7 @@ public class User implements Serializable {
   /**
   * @generated
   */
-  @Column(name = "email", nullable = true, unique = false, insertable=true, updatable=true)
+  @Column(name = "email", nullable = false, unique = false, insertable=true, updatable=true)
   
   private java.lang.String email;
 
