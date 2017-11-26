@@ -113,5 +113,9 @@
   "UpdateProfile": "Change Profile",
   "UserFullName": "Full name of the User",
   "UserPhoto": "Photo of the User",
-  "AbasteceData": "Supplies by Date"
+  "AbasteceData": "Supplies by Date",
+  "CarrosCampeoes": "Cars Champions of the Lower Cost per Km ridden",
+  "Marca": "Maker",
+  "Modelo": "Model",
+  "Custokm": "The cost of the km ridden"
 }

@@ -26,7 +26,6 @@
         "put": "authenticated",
         "delete": "authenticated"
       },
-      "generationType": "drop-and-create-tables",
       "attrs": {}
     },
     {

@@ -585,5 +585,72 @@
 			"foreignKey": null
 		},
 		"serviceUrl": "api/cronapi/query/soejwz0u63p2/"
+	},
+	"1hbaflwiuj0on": {
+		"customId": "CarrosCampeoes",
+		"queryName": "CarrosCampeoes",
+		"screen": "src/main/webapp/views/logged/CarrosCampeoesMenorCusto.view.html",
+		"sourceType": "blockly",
+		"blockly": {
+			"blocklyClass": "blockly.Campeoes",
+			"blocklyMethod": "CarrosCampeoes",
+			"blocklyLanguage": "java",
+			"blocklyJson": {
+				"namespace": "blockly.Campeoes",
+				"classNameNew": "Campeoes",
+				"classNameOld": "Campeoes",
+				"sourcePath": "src/main/java/blockly/Campeoes.blockly",
+				"language": "java",
+				"class": "blockly.Campeoes",
+				"methods": [
+					{
+						"name": "CarrosCampeoes",
+						"hasReturn": "true",
+						"params": []
+					}
+				]
+			},
+			"blocklyFunctionCall": "cronapi.util.makeCallServerBlocklyAsync('blockly.Campeoes:CarrosCampeoes', null, null)",
+			"blocklyGETMethod": "CarrosCampeoes",
+			"blocklyPOSTMethod": "CarrosCampeoes",
+			"blocklyPUTMethod": "CarrosCampeoes",
+			"blocklyDELETEMethod": "CarrosCampeoes",
+			"blocklyFILTERMethod": "CarrosCampeoes"
+		},
+		"entitySimpleName": null,
+		"entityFullName": null,
+		"query": "",
+		"queryParamsValues": [],
+		"verbs": {
+			"GET": true,
+			"GETAuthorities": null,
+			"POST": true,
+			"POSTAuthorities": null,
+			"PUT": true,
+			"PUTAuthorities": null,
+			"DELETE": true,
+			"DELETEAuthorities": null,
+			"FILTER": true,
+			"FILTERAuthorities": null
+		},
+		"events": {
+			"beforeInsert": null,
+			"beforeUpdate": null,
+			"beforeDelete": null,
+			"afterInsert": null,
+			"afterUpdate": null,
+			"afterDelete": null,
+			"onNavigate": null,
+			"onGetData": null
+		},
+		"defaultValues": {},
+		"security": {},
+		"calcFields": {},
+		"calcFieldsSecurity": {},
+		"errorHandles": {
+			"primaryKey": null,
+			"foreignKey": null
+		},
+		"serviceUrl": "api/cronapi/query/1hbaflwiuj0on/"
 	}
 }

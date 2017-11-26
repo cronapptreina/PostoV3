@@ -113,5 +113,9 @@
   "UpdateProfile": "Alterar Perfil",
   "UserFullName": "Nome Completo do Usuario",
   "UserPhoto": "Foto do Usuario",
-  "AbasteceData": "Abastecimentos por Data"
+  "AbasteceData": "Abastecimentos por Data",
+  "CarrosCampeoes": "Carros Campeões de Menor Custo por Km rodado",
+  "Marca": "Marca",
+  "Modelo": "Modelo",
+  "Custokm": "Custo do km rodado"
 }
