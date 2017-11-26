@@ -117,5 +117,6 @@
   "CarrosCampeoes": "Cars Champions of the Lower Cost per Km ridden",
   "Marca": "Maker",
   "Modelo": "Model",
-  "Custokm": "The cost of the km ridden"
+  "Custokm": "The cost of the km ridden",
+  "PostosCampeoes": "Stations the Champions of the Lower Cost per Km ridden"
 }
